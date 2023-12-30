@@ -15,13 +15,44 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>Health Office Nawalpur -HO Nawalpur</title>
     <style>
-        .custom-group:hover .custom{
+        .custom-group:hover .custom {
             display: block;
         }
     </style>
 </head>
 
 <body>
+
+
+    <!-- up btn -->
+    <div class="cursor-pointer">
+        <a href="" id="topBtn" class="bg-[#DC2626]  bg-red-600 fixed bottom-10 right-5 p-1 px-2 rounded-md  ">
+            <i class="ri-arrow-up-line text-2xl text-white "></i>
+        </a>
+    </div>
+
+    <!-- up btn -->
+
+    <script>
+        var topBtn = document.getElementById('topBtn');
+        topBtn.style.display = 'none';
+        window.onscroll = function () {
+            scrollFunction();
+        }
+        function scrollFunction() {
+            if (window.pageYOffset > 200) {
+                topBtn.style.display = 'block';
+            }
+            else {
+                topBtn.style.display = 'none';
+            }
+
+        }
+        topBtn.addEventListener('click', function () {
+            window.scroll(0, 0);
+        })
+    </script>
+
     <!-- contact bar started -->
     <section>
         <div class="bg-[#DC2626] text-white ">
@@ -68,7 +99,7 @@
         </div>
         <!-- upside of navbar ended -->
 
-        
+
     </section>
 
     <nav class="bg-[#1D4ED8] lg:block hidden sticky top-0 z-50  mt-2 ">
@@ -80,26 +111,28 @@
                 <li class="text-[18px] mx-7 py-1"><a href="">स्वास्थ्य संस्था </a></li>
                 <li class="text-[18px] mx-7 py-1"><a href="">सूचनाहरु</a></li>
                 <li class="text-[18px] mx-7 py-1"><a href="">ऐन तथा नियमहरु</a></li>
-                <li class="text-[18px] relative mx-7 py-1 group "><a href="">ऐन तथा नियमहरु</a>
-                
+                <li class="text-[18px] relative mx-7 py-1 group"><a href="">ऐन तथा नियमहरु</a>
+
                     <ul class="absolute bg-gray-200 text-black group-hover:block z-10 hidden">
                         <li class="text-[18px]  py-1 hover:bg-gray-400 px-10"><a href="">सूचनाहरु</a></li>
                         <li class="text-[18px]  py-1 hover:bg-gray-400 px-10"><a href="">सूचनाहरु</a></li>
-                        <li class="text-[18px]  py-1 hover:bg-gray-400 px-10 relative custom-group"><a href="">सूचनाहरु</a>
+                        <li class="text-[18px]  py-1 hover:bg-gray-400 px-10 relative custom-group"><a
+                                href="">सूचनाहरु</a>
 
                             <ul class="absolute bg-gray-200 text-black  z-10 hidden custom -top-5 left-32">
                                 <li class="text-[18px]  py-1 hover:bg-gray-400 px-10"><a href="">सूचनाहरु</a></li>
                                 <li class="text-[18px]  py-1 hover:bg-gray-400 px-10"><a href="">सूचनाहरु</a></li>
                                 <li class="text-[18px]  py-1 hover:bg-gray-400 px-10"><a href="">सूचनाहरु</a></li>
-        
+
                             </ul>
                         </li>
 
                     </ul>
-                
+
                 </li>
-                <li class=""><a href="">ऐन तथा नियमहरु</a></li>
-                <li class=""><a href="">ऐन तथा नियमहरु</a></li>
+                <li class="text-[18px] mx-7 py-1"><a href="">हाम्रो बारेमा</a></li>
+                <li class="text-[18px] mx-7 py-1"><a href="">रोगहरु</a></li>
+
             </ul>
         </div>
     </nav>
@@ -169,7 +202,7 @@
     <!-- small screen content -->
 
     <!-- suchana started -->
-    <div class="md:px-20 px-10 mt-2 text-white">
+    <div class="md:px-20 px-5 mt-2 text-white">
         <div class="bg-[#F3F4F6] flex items-center">
             <p class="bg-[#DC2626] w-fit py-2 px-4 font-semibold">
                 सूचना
@@ -182,12 +215,12 @@
     <!-- suchana started -->
 
     <!-- grid section started -->
-    <section class="md:px-20 px-10 mt-2">
+    <section class="md:px-20 px-5 mt-2">
         <div class="bg-[#2563EB] py-3 flex justify-between text-white px-4 items-center">
             <h2>डे‌गु ज्वरो (२०८० श्रावण देखि) सम्बन्धी जानकारी । मिति : 2080-07-18</h2>
             <a href="" class="bg-[#D1D5DB] px-2 py-1  rounded-lg text-blue-500">पुरा बिबरण हेर्नुहोस्</a>
         </div>
-        <div class="grid lg:grid-cols-8 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-8">
+        <div class="grid lg:grid-cols-8 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-8 ">
             <div class="bg-gradient-to-b from-blue-500 to-blue-200 text-center px-8 py-8 font-bold  ">
                 <p class="text-[15px]">हालसम्म जम्मा
                     परिक्षण</p>
@@ -242,7 +275,7 @@
     </section>
     <!-- gird section ended -->
     <!-- grid section started -->
-    <section class="md:px-20 px-10 mt-2">
+    <section class="md:px-20 px-5 mt-2">
         <div class="bg-[#2563EB] py-3 flex justify-between text-white px-4 items-center">
             <h2>डे‌गु ज्वरो (२०८० श्रावण देखि) सम्बन्धी जानकारी । मिति : 2080-07-18</h2>
             <a href="" class="bg-[#D1D5DB] px-2 py-1  rounded-lg text-blue-500">पुरा बिबरण हेर्नुहोस्</a>
@@ -303,7 +336,7 @@
     <!-- gird section ended -->
 
     <!-- image section started -->
-    <section class="md:px-20 px-10 mb-5">
+    <section class="md:px-20 px-5 mb-5">
         <div class="mt-5">
             <div class="grid xl:grid-cols-4 grid-cols-1 gap-6">
                 <div class="xl:col-span-3 ">
@@ -341,27 +374,26 @@
 
                     </div>
                 </div>
-                <div class=" grid xl:grid-cols-1 sm:grid-cols-2 lg:grid-cols- gap-5 ">
+                <div class=" grid xl:grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-5 ">
                     <div class="bg-[#F3F4F6] py-2 px-5 text-center ">
                         <p class="mb-5 text-blue-500">बरिष्ठ जनस्वास्थ्य अधिकृत( कार्यालय प्रमुख)</p>
-                        <img src="IMG_20220330_134958_780_1663741207.jpg" class="w-full mx-auto" alt="">
+                        <img src="IMG_20220330_134958_780_1663741207.jpg" class=" h-full bg-cover mb-4 mx-auto" alt="">
                         <p>केशव प्रसाद चापागाई ९८५७०४७९७६</p>
                     </div>
                     <div class="bg-[#F3F4F6] py-2 px-5 text-center ">
                         <p class="mb-5 text-blue-500">बरिष्ठ जनस्वास्थ्य अधिकृत( कार्यालय प्रमुख)</p>
-                        <img src="IMG_20220330_134958_780_1663741207.jpg" class="w-full mx-auto" alt="">
+                        <img src="IMG_20220330_134958_780_1663741207.jpg" class=" h-full bg-cover mb-4  mx-auto" alt="">
                         <p>केशव प्रसाद चापागाई ९८५७०४७९७६</p>
                     </div>
                     <div class="bg-[#F3F4F6] py-2 px-5 text-center ">
                         <p class="mb-5 text-blue-500">बरिष्ठ जनस्वास्थ्य अधिकृत( कार्यालय प्रमुख)</p>
-                        <img src="IMG_20220330_134958_780_1663741207.jpg" class="w-full mx-auto" alt="">
+                        <img src="IMG_20220330_134958_780_1663741207.jpg" class=" h-full mb-4 bg-cover mx-auto" alt="">
                         <p>केशव प्रसाद चापागाई ९८५७०४७९७६</p>
                     </div>
-
+                    <div class="bg-[#E5E7EB] text-center rounded py-1">
+                        <a href="" class="text-blue-600 font-bold text-[15px]">पूरा कर्मचारीहरू हेर्नुहोस्</a>
+                    </div>
                 </div>
-
-
-
 
             </div>
 
@@ -370,8 +402,148 @@
 
 
 
+    <!-- program section started -->
+    <section>
+        <div class="text-center font-bold w-fit mx-auto md:my-10 my-6">
+            <h1 class="md:text-3xl text-2xl">कार्यक्रमहरू</h1>
+            <hr class=" border border-red-600  ">
 
-<!-- menu bar displayy -->
+        </div>
+
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:px-20 px-5 gap-5">
+            <div class="shadow-2xl rounded-md cursor-pointer">
+
+                <div class="w-full">
+                    <img src="denguew.jpg" alt="">
+
+                </div>
+                <div class="px-3">
+                    <h1 class="line-clamp-1 text-xl font-bold">डेंगु तथा जापनिज ईन्सेफलाइटिस निएंत्रण तथा रोकथाम डेंगु
+                        तथा जापनिज ईन्सेफलाइटिस निएंत्रण तथा रोकथाम</h1>
+                    <p class="line-clamp-2 text-2xl text-sm md:leading-6">स्वास्थ्य कार्यालय नवलपुरको आयोजनामा डेंगु तथा
+                        जापनिज ईन्सेफलाइटिस निएंत्रण तथा रोकथाम सम्बन्धी म.स्वा.से तथा स्वास्थ्यकर्मिहरुका लागि १
+                        दिस्वास्थ्य कार्यालय नवलपुरको आयोजनामा डेंगु तथा जापनिज ईन्सेफलाइटिस निएंत्रण तथा रोकथाम
+                        सम्बन्धी म.स्वा.से तथा स्वास्थ्यकर्मिहरुका लागि १ दि</p>
+                    <div class="flex justify-between my-5 items-center">
+                        <i class="ri-calendar-line md:text-[18px] text-sm">2080-1-05</i>
+                        <a href="" class="bg-[#6366F1] py-2 px-4 rounded-md text-white">पूरा हेर्नुहोस्</a>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-2xl rounded-md cursor-pointer">
+
+                <div class="w-full">
+                    <img src="d2.jpg" alt="">
+
+                </div>
+                <div class="px-3">
+                    <h1 class="line-clamp-1 text-xl font-bold">डेंगु तथा जापनिज ईन्सेफलाइटिस निएंत्रण तथा रोकथाम डेंगु
+                        तथा जापनिज ईन्सेफलाइटिस निएंत्रण तथा रोकथाम</h1>
+                    <p class="line-clamp-2 text-2xl text-sm md:leading-6">स्वास्थ्य कार्यालय नवलपुरको आयोजनामा डेंगु तथा
+                        जापनिज ईन्सेफलाइटिस निएंत्रण तथा रोकथाम सम्बन्धी म.स्वा.से तथा स्वास्थ्यकर्मिहरुका लागि १
+                        दिस्वास्थ्य कार्यालय नवलपुरको आयोजनामा डेंगु तथा जापनिज ईन्सेफलाइटिस निएंत्रण तथा रोकथाम
+                        सम्बन्धी म.स्वा.से तथा स्वास्थ्यकर्मिहरुका लागि १ दि</p>
+                    <div class="flex justify-between my-5 items-center">
+                        <i class="ri-calendar-line md:text-[18px] text-sm">2080-1-05</i>
+                        <a href="" class="bg-[#6366F1] py-2 px-4 rounded-md text-white">पूरा हेर्नुहोस्</a>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-2xl rounded-md cursor-pointer">
+
+                <div class="w-full">
+                    <img src="tb.jpg" class="" alt="">
+
+                </div>
+                <div class="px-3">
+                    <h1 class="line-clamp-1 text-xl font-bold">डेंगु तथा जापनिज ईन्सेफलाइटिस निएंत्रण तथा रोकथाम डेंगु
+                        तथा जापनिज ईन्सेफलाइटिस निएंत्रण तथा रोकथाम</h1>
+                    <p class="line-clamp-2 text-2xl text-sm md:leading-6">स्वास्थ्य कार्यालय नवलपुरको आयोजनामा डेंगु तथा
+                        जापनिज ईन्सेफलाइटिस निएंत्रण तथा रोकथाम सम्बन्धी म.स्वा.से तथा स्वास्थ्यकर्मिहरुका लागि १
+                        दिस्वास्थ्य कार्यालय नवलपुरको आयोजनामा डेंगु तथा जापनिज ईन्सेफलाइटिस निएंत्रण तथा रोकथाम
+                        सम्बन्धी म.स्वा.से तथा स्वास्थ्यकर्मिहरुका लागि १ दि</p>
+                    <div class="flex justify-between my-5 items-center">
+                        <i class="ri-calendar-line md:text-[18px] text-sm">2080-1-05</i>
+                        <a href="" class="bg-[#6366F1] py-2 px-4 rounded-md text-white">पूरा हेर्नुहोस्</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="bg-[#E5E7EB] text-center rounded py-1 my-5 w-fit mx-auto items-center  px-10 ">
+            <a href="" class="text-blue-600 font-bold text-[15px] text-xl">थप कार्यक्रमहरू
+                <span></span> <i class="ri-arrow-right-line text-xl">
+
+                </i>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- program section ended -->
+
+
+    <!-- footer section started -->
+    <section>
+        <div class="lg:flex lg:flex-row flex-col justify-between md:px-20 py-20 bg-[#F3F4F6] ">
+            <div class=" mb-5 text-center ">
+                <span class="text-red-600 ">
+                    <p class="text-xl font-semibold">प्रदेश सरकार</p>
+                    <p class="font-bold leading-8">सामाजिक विकास तथा स्वास्थ्य मन्त्रालय</p>
+                    <p class="font-bold leading-8">स्वास्थ्य निर्देशनालय</p>
+                    <p class="text-5xl font-extrabold">स्वास्थ्य कार्यालय</p>
+                    <p class="font-bold leading-8">नवलपरासी ( बर्दघाट सुस्ता पूर्व )</p>
+                    <p class="font-bold leading-8">गण्डकी प्रदेश, नेपाल</p>
+                </span>
+            </div>
+            <div class=" mb-5 text-left px-5  ">
+                <span class="text-red-600 ">
+                    <p class=" text-black text-xl font-semibold">Contact Address</p>
+                    <p class=" text-black font-bold leading-8">नवलपरासी ( बर्दघाट सुस्ता पूर्व ), गण्डकी प्रदेश, नेपाल
+                    </p>
+                    <p class=" text-black font-bold leading-8">फोन: ०७८-४०१०८३, ०७८-५४००१८</p>
+                    <p class=" text-black font-bold leading-8">इमेल: honawalpur@gmail.com</p>
+                </span>
+            </div>
+            <div class=" mb-5 text-left px-5  ">
+                <span class="text-red-600 ">
+                    <p class=" text-black text-xl font-semibold">Contact Address</p>
+                    <p class=" text-black font-bold leading-8">नवलपरासी ( बर्दघाट सुस्ता पूर्व ), गण्डकी प्रदेश, नेपाल
+                    </p>
+                    <p class=" text-black font-bold leading-8">फोन: ०७८-४०१०८३, ०७८-५४००१८</p>
+                    <p class=" text-black font-bold leading-8">इमेल: honawalpur@gmail.com</p>
+                </span>
+            </div>
+
+        </div>
+        <footer class="bg-[#2563EB]">
+            <div class="text-white flex justify-between px-10 py-1 items-center">
+                <p class="">Copyright © 2023
+
+                    <span class="border-l-2">
+                        &nbsp; स्वास्थ्य कार्यालय नवलपरासी All Rights Reserved
+                    </span>
+                </p>
+
+                <p class="">
+                    <i class=" ml-4 text-[20px] ri-facebook-fill"></i>
+                    <i class=" ml-4 text-[20px] ri-twitter-fill"></i>
+                    <i class=" ml-4 text-[20px] ri-mail-fill"></i>
+                    <i class=" ml-4 text-[20px] ri-map-pin-line"></i>
+
+                </p>
+                <a href="https://www.bitmapitsolution.com/" target="_blank">Powered by : <span
+                        class="hover:underline">Bitmap I.T. Solution Pvt. Ltd.</span></a>
+            </div>
+        </footer>
+    </section>
+
+    <!-- footer section ended -->
+
+
+
+
+    <!-- menu bar displayy -->
 
     <script>
         function showMenu() {
@@ -396,7 +568,8 @@
             },
             pagination: {
                 el: ".swiper-pagination",
-                clickable:true,
+                clickable: true,
+                autoplay: true,
             },
             mousewheel: true,
             keyboard: true,
